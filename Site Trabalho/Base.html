@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Base</title>
+  <link rel="stylesheet" href="Aparencia.css">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark" aria-label="Navegação principal">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Cruziero Esporte Clube</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar navegação">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto"> <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#historia">Historia</a></li>
+        <li class="nav-item"><a class="nav-link" href="#info">Informações</a></li> 
+        <li class="nav-item"><a class="nav-link" href="#contato">Contatos</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  <section id="home">
+   <h2>Bem-vindo ao Cruzeiro EC</h2>
+        <p>Explore nosso site para saber mais sobre o clube, nossos jogadores e as últimas notícias.</p>    
+    </section> 
+    <section id="historia">
+      <h2>História do Clube</h2>
+      <p>O Cruzeiro Esporte Clube foi fundado em 2 de janeiro de 1921, na cidade de Belo Horizonte, Minas Gerais. Originalmente chamado de Società Sportiva Palestra Itália, o clube adotou o nome Cruzeiro em 1942. Ao longo de sua história, o Cruzeiro tornou-se um dos maiores clubes do futebol brasileiro, com conquistas importantes em âmbito nacional e internacional.
+      Entre os títulos mais marcantes estão os Campeonatos Brasileiros de 1966, 2003 e 2013, além de duas Taças Libertadores da América, conquistadas em 1976 e 1997. O clube também venceu diversas edições da Copa do Brasil, destacando-se pelas campanhas de 1993, 1996, 2000, 2003 e 2017.
+      O Cruzeiro é conhecido por revelar grandes jogadores, por uma base forte no futebol mineiro e por sua apaixonada torcida. Seus jogos ocorrem principalmente no Mineirão, estádio símbolo do futebol em Minas Gerais. Ao longo dos anos, o clube passou por altos e baixos, mas mantém tradição, rivalidades históricas (como com Atlético Mineiro) e uma grande presença no cenário do futebol brasileiro.</p>
+    </section>
+      <video controls>
+  <source src="Imagem/Video.mp4" type="video/mp4">
+  <track kind="subtitles" srclang="pt-br" src="Imagem/Legenda.vtt" label="legendas pt-br">
+      </video>
+   <section id="info">
+    <div class="info-cards">
+      <div class="info-card">Elenco Atual</div>
+      <div class="info-card">Posição no Campeonato</div>
+      <a href="Galeria/Galeria.html" class="info-card">Galeria</a>
+      <a href="Tabela/Tabela.html" class="info-card">Títulos</a>
+    </div>
+   </section>    
+   <section id="contato">
+    <h2>Entre em contato</h2>   
+    <form>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="mensagem">Mensagem:</label>
+        <textarea type="text" id="mensagem" name="mensagem" required></textarea>
+        <button type="submit">Enviar</button>
+    </form>
+    </section>
+    <!-- Adicionando botão de curtir com mensagem e emoji -->
+<div id="like-section" style="text-align: center; margin: 20px auto;">
+  <p style="font-size: 18px; font-weight: bold;">Gostou do site? <br>Deixe sua curtida aqui! 👍</p>
+  <button id="like-button" class="btn btn-primary">Curtir</button>
+  <p id="like-count" style="margin-top: 10px; font-size: 16px;">0</p>
+</div>
+
+  <footer>
+    <p>Redes Sociais do Clube</p>
+    <ul>
+      <li><a href="https://www.instagram.com/cruzeiro/">Instagram</a></li>
+      <li><a href="https://www.facebook.com/cruzeirooficial/?locale=pt_BR">Facebook</a></li>
+    </ul>
+  <p>&copy; 2025 - Site não oficial criado por fã.</p>
+</footer>
+<!-- Adicionando botão de alternância de tema -->
+<button id="theme-toggle">🌙</button>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

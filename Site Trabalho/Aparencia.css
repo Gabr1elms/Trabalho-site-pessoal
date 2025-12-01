@@ -1,0 +1,326 @@
+/* Estilo geral do corpo da página */
+body{
+    background-color: rgb(255, 255, 255); /* cor de fundo da página */
+    margin: auto; /* centraliza o conteúdo horizontalmente */
+    padding-top: 0; /* Remove o espaçamento superior */
+    background: url('Imagem/fundo_escuro.svg')center/cover no-repeat ; /* imagem de fundo */
+    color: #fff !important; /* cor do texto padrão */
+    font-size: 20px; /* aumenta o tamanho da fonte padrão */
+}
+
+/* Barra de navegação fixa no topo (menu principal do site) */
+nav {
+    background-color: rgb(25, 62, 143); /* cor de fundo da barra de navegação */
+    padding: 15px 40px; /* espaçamento interno */
+    position: fixed; /* fixa no topo */
+    width: 100%; /* ocupa toda a largura */
+    top: 0; /* topo da página */
+    left: 0; /* alinhado à esquerda */
+    display: flex; /* usa flexbox */
+    align-items: center; /* centraliza verticalmente */
+    justify-content: center; /* centraliza horizontalmente */
+    z-index: 1000; /* sobrepõe outros elementos */
+}
+
+.navbar-toggler {
+    margin-left: auto; /* Move o botão para o canto direito */
+}
+
+
+/* Garantindo que a barra de navegação acompanhe o scroll */
+.navbar {
+    position: relative; /* Permite que a barra de navegação role junto com a página */
+}
+
+/* Lista de links do menu de navegação (itens do menu) */
+nav ul {
+    list-style: none; /* remove marcadores */
+    display: flex; /* usa flexbox */
+    justify-content: center; /* centraliza horizontalmente */
+    align-items: center; /* centraliza verticalmente */
+    margin: 0; /* remove margem padrão */
+    padding: 0; /* remove padding padrão */
+    flex: 1; /* ocupa espaço disponível */
+}
+
+/* Cada item do menu de navegação (espaçamento entre os itens) */
+nav ul li{
+    margin: 15px; /* espaçamento entre itens */
+}
+
+/* Link do menu de navegação (estilo dos links) */
+nav ul li a{
+    color: rgb(255, 255, 255); /* cor do link */
+    text-decoration: none; /* remove sublinhado */
+    font-size: 18px; /* tamanho da fonte */
+}
+
+/* Efeito hover nos links do menu (animação ao passar o mouse) */
+nav ul li a:hover{
+    color: rgb(25, 62, 143); /* cor ao passar o mouse */
+    background-color: rgb(255, 255, 255); /* fundo ao passar o mouse */
+    padding: 5px; /* espaçamento ao passar o mouse */
+    border-radius: 5px; /* cantos arredondados */
+}
+a {
+    text-decoration: none; /* remove sublinhado */
+}
+/* Seção principal com imagem de fundo (destaque inicial do site) */
+#home {
+    background: url('Imagem/Stadio.jpg') center/cover no-repeat; /* imagem de fundo da home */
+    color: rgb(255, 255, 255); /* cor do texto */
+    text-align: center; /* centraliza texto */
+    height: 100vh; /* ocupa altura total da tela */
+    display: flex; /* usa flexbox */
+    flex-direction: column; /* direção coluna */
+    justify-content: center; /* centraliza verticalmente */
+    align-items: center; /* centraliza horizontalmente */
+}
+
+/* Título principal da seção home (texto grande de boas-vindas) */
+#home h2 {
+        font-size: 50px; /* tamanho do título */
+        margin-bottom: 20px; /* espaço abaixo do título */
+}
+
+/* Parágrafo da seção home (descrição de boas-vindas) */
+#home p {
+        font-size: 25px; /* tamanho do texto */
+        margin: 0 auto; /* centraliza o parágrafo */
+}
+
+/* Vídeos responsivos e centralizados */
+video {
+    display: block; /* força quebra de linha */
+    margin: 32px auto; /* centraliza e dá espaço */
+    max-width: 100%; /* não ultrapassa a tela */
+    width: 100%; /* ocupa toda a largura possível */
+    max-width: 480px; /* largura máxima mais compacta */
+    border-radius: 12px; /* cantos arredondados */
+    box-shadow: 0 4px 24px rgba(25,62,143,0.10);
+    height: auto; /* mantém proporção */
+}
+
+/* Cards de informações na seção info (quatro quadrados para informações) */
+.info-cards {
+    display: flex; /* usa flexbox */
+    justify-content: center; /* centraliza horizontalmente */
+    gap: 32px; /* espaço entre os cards */
+    margin: 40px 0; /* margem acima e abaixo */
+    flex-wrap: wrap; /* quebra linha se necessário */
+}
+
+.info-card {
+    background: #fff; /* fundo branco */
+    border: 2px solid hsl(235, 66%, 30%); /* borda azul escura */
+    border-radius: 16px; /* cantos arredondados */
+    color: #1a237e; /* cor do texto */
+    width: 220px; /* largura fixa */
+    min-height: 180px; /* altura mínima */
+    display: flex; /* usa flexbox */
+    flex-direction: column; /* direção coluna */
+    align-items: center; /* centraliza horizontalmente */
+    justify-content: flex-start; /* alinha no topo */
+    font-size: 1.1rem; /* tamanho da fonte */
+    font-weight: bold; /* negrito */
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08); /* sombra leve */
+    transition: transform 0.2s, box-shadow 0.2s; /* animação suave */
+    padding: 18px 10px 12px 10px; /* espaçamento interno */
+}
+
+.info-card img {
+    width: 60px; /* largura da imagem */
+    height: 60px; /* altura da imagem */
+    object-fit: contain; /* mantém proporção */
+    margin-bottom: 12px; /* espaço abaixo da imagem */
+    border-radius: 8px; /* cantos arredondados */
+}
+
+.info-card:hover {
+    transform: translateY(-10px) scale(1.06); /* animação de elevação */
+    box-shadow: 0 12px 32px rgba(25, 62, 143, 0.25); /* sombra mais forte */
+    background: #e3edff; /* fundo azul claro */
+    color: #1976d2; /* cor do texto azul */
+    border-color: #1976d2; /* borda azul clara */
+}
+
+/* Estilo geral das seções (padding e alinhamento) */
+section {
+    padding: 80px 20px; /* espaçamento interno */
+    text-align: center; /* centraliza texto */
+}
+
+/* Formulário de contato (layout do formulário) */
+form {
+    display: flex; /* usa flexbox */
+    flex-direction: column; /* direção coluna */
+    max-width: 400px; /* largura máxima */
+    margin: auto; /* centraliza formulário */
+    background-color: #ffffff; /* Fundo branco */
+    border-radius: 0; /* Remove as bordas arredondadas */
+    padding: 20px; /* Adiciona espaçamento interno */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona uma leve sombra */
+    color: #1976d2;
+}
+
+/* Rótulos do formulário (nome, email, etc) */
+form label {
+    margin-bottom: 10px; /* espaço abaixo do label */
+    font-weight: bold; /* texto em negrito */
+    text-align: left; /* alinha à esquerda */
+}
+
+/* Campos de entrada do formulário (inputs e textarea) */
+form input, form textarea {
+    padding: 10px; /* espaçamento interno */
+    border: 1px solid #ccc; /* borda cinza */
+    border-radius: 5px; /* cantos arredondados */
+    cursor: pointer; /* cursor de texto/mão */
+}
+
+/* Efeito hover no botão do formulário (animação ao passar o mouse) */
+form button:hover {
+    background-color: #007BFF; /* fundo azul ao passar o mouse */
+}
+
+/* Rodapé branco no final da página (informações finais e redes sociais) */
+footer {
+    background: #fff; /* fundo branco */
+    color: #1a237e; /* cor do texto */
+    padding: 18px 0; /* espaçamento interno */
+    width: 100%; /* ocupa toda a largura */
+    box-shadow: 0 -2px 8px rgba(0,0,0,0.08); /* sombra superior */
+    display: flex; /* layout horizontal */
+    flex-direction: column; /* empilha os blocos */
+    align-items: center; /* centraliza horizontalmente */
+    gap: 0; /* sem espaço extra */
+    font-size: 1.1rem; /* tamanho da fonte */
+    border-top-left-radius: 16px; /* cantos arredondados */
+    border-top-right-radius: 16px; /* cantos arredondados */
+    text-align: center; /* Centraliza o texto e os elementos dentro do footer */
+}
+
+footer ul {
+    display: flex; /* layout horizontal */
+    gap: 16px; /* espaço entre links */
+    list-style: none; /* remove marcadores */
+    margin: 0; /* remove margem */
+    padding: 0; /* remove padding */
+    justify-content: center; /* Centraliza os itens da lista horizontalmente */
+}
+
+footer ul li a {
+    color: #1976d2; /* cor dos links */
+    text-decoration: none; /* sem sublinhado */
+    font-weight: bold; /* negrito */
+    transition: color 0.2s; /* animação cor */
+}
+
+footer ul li a:hover {
+    color: #0d1b4d; /* cor ao passar o mouse */
+    text-decoration: underline; /* sublinhado ao passar o mouse */
+}
+
+/* Tornando as letras da barra de navegação brancas */
+.navbar-nav .nav-link {
+    color: #fff !important; /* Força a cor branca nos links */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #1976d2 !important; /* Azul padrão do Bootstrap */
+}
+
+/* Tornando o texto da seção História do Clube branco */
+
+/* Estilizando o botão de curtir e a seção */
+#like-section {
+    background-color: #fff; /* Fundo branco */
+    border-radius: 8px; /* Bordas arredondadas */
+    padding: 20px; /* Espaçamento interno */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra leve */
+    display: inline-block; /* Ajusta o tamanho ao conteúdo */
+    margin: 20px auto; /* Centraliza horizontalmente */
+    display: flex; /* Usa flexbox para centralizar */
+    flex-direction: column; /* Alinha itens em coluna */
+    align-items: center; /* Centraliza horizontalmente */
+    justify-content: center; /* Centraliza verticalmente */
+    margin: 20px auto; /* Centraliza na tela */
+    max-width: 400px; /* Define uma largura máxima */
+}
+
+#like-button {
+    background-color: rgb(25, 62, 143); /* Azul do site */
+    color: #fff; /* Cor do texto */
+    border: none; /* Remove bordas */
+    padding: 10px 20px; /* Espaçamento interno */
+    border-radius: 5px; /* Bordas arredondadas */
+    font-size: 16px; /* Tamanho da fonte */
+    cursor: pointer; /* Cursor de clique */
+    transition: background-color 0.3s ease; /* Animação suave */
+}
+
+
+/* Estilizando o botão de curtir e a seção */
+#like-section {
+    background-color: #fff; /* Fundo branco */
+    border-radius: 8px; /* Bordas arredondadas */
+    padding: 20px; /* Espaçamento interno */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra leve */
+    display: inline-block; /* Ajusta o tamanho ao conteúdo */
+    margin: 20px auto; /* Centraliza horizontalmente */
+     display: flex; /* Usa flexbox para centralizar */
+    flex-direction: column; /* Alinha itens em coluna */
+    align-items: center; /* Centraliza horizontalmente */
+    justify-content: center; /* Centraliza verticalmente */
+    margin: 20px auto; /* Centraliza na tela */
+    max-width: 400px; /* Define uma largura máxima */
+    color: #386b9e
+}
+
+#like-button {
+    background-color: #007BFF; /* Azul padrão do Bootstrap */
+    color: #fff; /* Cor do texto */
+    border: none; /* Remove bordas */
+    padding: 10px 20px; /* Espaçamento interno */
+    border-radius: 5px; /* Bordas arredondadas */
+    font-size: 16px; /* Tamanho da fonte */
+    cursor: pointer; /* Cursor de clique */
+    transition: background-color 0.3s ease; /* Animação suave */
+}
+
+#like-button:hover {
+    background-color: #0056b3; /* Azul mais escuro ao passar o mouse */
+}
+
+#like-button:hover {
+    background-color: rgb(18, 45, 104); /* Azul mais escuro ao passar o mouse */
+}
+
+/* Estilizando o botão de alternância de tema */
+#theme-toggle {
+    position: fixed; /* Fixa o botão no canto inferior direito */
+    bottom: 20px; /* Distância da parte inferior */
+    right: 20px; /* Distância da lateral direita */
+    width: 50px; /* Largura do botão */
+    height: 50px; /* Altura do botão */
+    background-color: #1976d2; /* Cor de fundo azul */
+    border: none; /* Remove bordas */
+    border-radius: 50%; /* Torna o botão redondo */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona sombra */
+    font-size: 24px; /* Tamanho do ícone */
+    cursor: pointer; /* Cursor de clique */
+    display: flex; /* Centraliza o ícone */
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+    transition: background-color 0.3s ease; /* Animação suave */
+}
+
+#theme-toggle:hover {
+    background-color: #0d47a1; /* Azul mais escuro ao passar o mouse */
+}
+
+/* Estilo para o modo claro */
+body.white-mode {
+    background: url('Imagem/fundo_claro.svg')center/cover no-repeat ; /* imagem de fundo */
+    color: #2356cd !important; /* Texto claro */
+}
